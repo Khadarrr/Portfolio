@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "Neue Haas Grotesk";
+  src: url(/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Neue Haas Grotesk", "Helvetica Neue", "Helvetica", sans-serif;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.371);
+  padding: 20px;
+  margin-top: 40px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.section__pic-container {
+  flex-basis: 30%;
+}
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.profile:hover .profile-pic {
+  transform: scale(1.1);
+}
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__text__p1 {
+  color: #888;
+  font-size: 18px;
+}
+
+.title {
+  font-size: 36px;
+  margin-top: 10px;
+  transition: color 0.5s ease-in-out;
+}
+
+.profile:hover .title {
+  color: #ff7f50;
+}
+
+.section__text__p2 {
+  color: #888;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn-color-1 {
+  background-color: #333;
+}
+
+.btn-color-2 {
+  background-color: #888;
+}
+
+.btn:hover {
+  background-color: #ff7f50;
+}
+
+#socials-container {
+  margin-top: 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+#projects {
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 40px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+#projects .section__text__p1 {
+  color: #888;
+  font-size: 18px;
+}
+
+#projects .title {
+  font-size: 36px;
+  margin-top: 10px;
+  transition: color 0.5s ease-in-out;
+}
+
+#projects:hover .title {
+  color: #ff7f50;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.details-container {
+  flex-basis: 30%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-right: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.details-container:hover {
+  transform: translateY(-5px);
+}
+
+.about-containers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.article-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  margin-top: 10px;
+}
+
+.project-btn {
+  margin-top: 10px;
+}
+
+#contact {
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 40px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.contact-info-container:hover {
+  transform: scale(1.1);
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .section__pic-container,
+  .section__text {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .profile {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .profile-pic {
+    max-width: 150px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .details-container {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-containers {
+    flex-direction: column;
+  }
+
+  .article-container {
+    height: auto;
+  }
+}
