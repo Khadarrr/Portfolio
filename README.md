@@ -12,6 +12,8 @@ In the end I went for simplicity. Describing how I am and what I work with and l
 
 Just keep it simple and right to the point with my work and links to the actually site and GitHub repo. Added some animations to the site to make it more fun when you enter the site, and some on the cards.
 
+ added a skill section to showcase the programing skills i know, made it that the name pops up when you hover over the image.
+
 ## Attachments
 - credit to this page : https://thriving-dragon-a3fcd9.netlify.app/
 

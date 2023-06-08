@@ -193,36 +193,59 @@ body {
   margin-top: 10px;
 }
 
-#contact {
-  background-color: #fff;
-  padding: 40px;
-  margin-top: 40px;
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
   text-align: center;
-  animation: fadeInUp 1s ease-out;
+}
+
+.contact-section .section__text__p1 {
+  color: #888;
+  font-size: 18px;
+}
+
+.contact-section .title {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .contact-info-upper-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition: transform 0.5s ease-in-out;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .contact-info-container:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-icon {
-  width: 30px;
-  height: 30px;
+.contact-info-container img {
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
-  cursor: pointer;
+}
+
+.email-box {
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.email-box:hover {
+  background-color: #f5f5f5;
 }
 
 footer {
@@ -243,6 +266,60 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+#skills {
+  background-color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills-title {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skill-list li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.skill-list img {
+  width: 100px;
+  height: 100px;
+  transition: opacity 0.3s;
+}
+
+.skill-list li .program-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.skill-list li:hover img {
+  opacity: 0.7;
+}
+
+.skill-list li:hover .program-name {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -281,5 +358,40 @@ footer {
 
   .article-container {
     height: auto;
+  }
+  .skills-title {
+    font-size: 24px;
+  }
+
+  .skill-list li {
+    margin: 10px;
+  }
+
+  .skill-list img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .contact-section .section__text__p1 {
+    font-size: 18px;
+  }
+
+  .contact-section .title {
+    font-size: 24px;
+  }
+
+  .contact-info-container {
+    padding: 10px;
+  }
+
+  .contact-info-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+  }
+
+  .email-box {
+    font-size: 16px;
+    padding: 3px 8px;
   }
 }
